@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Arma Modification project template by acemod</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Arma Modification project template</h1>
+        <p>Addon Project template for Arma3 modifications using ACE3</p>
+
+        <p class="view"><a href="https://github.com/acemod/arma-project-template">View the Project on GitHub <small>acemod/arma-project-template</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/acemod/arma-project-template/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/acemod/arma-project-template/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/acemod/arma-project-template">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="arma3-addon-project-template" class="anchor" href="#arma3-addon-project-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arma3 AddOn Project template</h1>
+
+<p>A project template for Arma3 AddOn projects using the ACE3 framework. This template is based off the ACE3 project structure.</p>
+
+<h3>
+<a id="development-environment" class="anchor" href="#development-environment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development Environment</h3>
+
+<p>See the <a href="http://ace3mod.com/wiki/development/setting-up-the-development-environment.html">ACE3 documentation</a> on setting up your development environment</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Search and replace all mentions of the following:</p>
+
+<pre><code>proj_templ by {your_prefix}
+</code></pre>
+
+<pre><code>PROJ_TEMPL by {PROJ_TEMPL}
+</code></pre>
+
+<p>Note that both lower and upper case are necessary. Once done, replace the logo (<code>logo_proj_templ_ca.paa</code>) by your own. Keep the same aspect ratio and file extension (<code>.paa</code>). This is important for good results in game. Also remember to rename the logo file to <code>logo_{your_prefix}_ca.paa</code>.</p>
+
+<h5>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example:</h5>
+
+<pre><code>proj_templ by acex
+</code></pre>
+
+<pre><code>PROJ_TEMPL by ACEX
+</code></pre>
+
+<h3>
+<a id="using-ci" class="anchor" href="#using-ci" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using CI</h3>
+
+<p>This template comes with some basic scripts to validate and enforce parts of the ACE3 coding guidelines. You can find those scripts in the tools directory.</p>
+
+<ul>
+<li>sqf_validator.py - checks all .sqf files in the addons directory and checks for missing brackets, missing semi-colons and tab usage.</li>
+<li>config_style_checker.py - checks all .hpp and .cpp files in the addons directory and checks for missing brackets and tabs.</li>
+</ul>
+
+<p>For more information on the guidelines, see ACE3 coding guidelines.</p>
+
+<p>You can use these scripts in combination with CI - if you are on GitHub and use Travis-CI, here is an example:</p>
+
+<div class="highlight highlight-source-yaml"><pre><span class="pl-s"><span class="pl-ent">language:</span> <span class="pl-s">python</span></span>
+<span class="pl-s"><span class="pl-ent">python:</span></span>
+<span class="pl-s">- <span class="pl-s"><span class="pl-pds">'</span>3.4<span class="pl-pds">'</span></span></span>
+<span class="pl-s"><span class="pl-ent">script:</span></span>
+<span class="pl-s">- <span class="pl-s">python3 tools/sqf_validator.py</span></span>
+<span class="pl-s">- <span class="pl-s">python3 tools/config_style_checker.py</span></span></pre></div>
+
+<h3>
+<a id="adding-new-components" class="anchor" href="#adding-new-components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding new components</h3>
+
+<p>Adding a new component to your project is done by copying the example component directory and renaming it. Follow these steps:</p>
+
+<ul>
+<li>Copy the blank example component directory into the addons directory</li>
+<li>Rename the component directory name (blank -&gt; {your component name})</li>
+<li>Do a search and replace of <code>blank</code> by <code>your component name</code>. Take care to preserve case sensitivity.</li>
+<li>Ensure that the required AddOns in the <code>config.cpp</code> file inside your new component are set correctly. You will need at least a requirement to the main component of your project. Any other modifications that your component depends on will also need to be listed here, including your own components that you depend upon.</li>
+<li>Start work on your component.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/acemod">acemod</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
