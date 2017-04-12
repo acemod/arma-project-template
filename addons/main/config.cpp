@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"ace_common"};
         author = "";
-        authors[] = {"ACE Team", "Glowbal"}
+        authors[] = {"ACE Team", "Glowbal"};
         authorUrl = "http://ace3mod.com";
         VERSION_CONFIG;
     };
