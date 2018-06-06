@@ -122,5 +122,6 @@ Adding a new component to your project is done by copying the example component 
 - Copy the blank example component directory into the addons directory
 - Rename the component directory name (blank -> {your component name})
 - Do a search and replace of `blank` by `your component name`. Take care to preserve case sensitivity.
+- Do a search and replace of `Blank` by `your component name`  in beautified form, like `Ace` with upper and lower casing. Take care to preserve case sensitivity at search.
 - Ensure that the required AddOns in the `config.cpp` file inside your new component are set correctly. You will need at least a requirement to the main component of your project. Any other modifications that your component depends on will also need to be listed here, including your own components that you depend upon.
 - Start work on your component.
