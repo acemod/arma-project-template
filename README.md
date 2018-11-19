@@ -15,8 +15,8 @@
     <a href="https://github.com/acemod/arma-project-template/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-red.svg?style=flat-square" alt="ACE Project Template License">
     </a>
-    <a href="http://slackin.ace3mod.com/">
-        <img src="http://slackin.ace3mod.com/badge.svg?style=flat-square&label=Slack" alt="ACE3 Slack">
+    <a href="https://slackin.ace3mod.com/">
+        <img src="https://slackin.ace3mod.com/badge.svg?style=flat-square&label=Slack" alt="ACE3 Slack">
     </a>
     <a href="https://travis-ci.org/acemod/arma-project-template">
         <img src="https://img.shields.io/travis/acemod/arma-project-template.svg?style=flat-square&label=Build" alt="ACE Project Template Build Status">
@@ -35,7 +35,7 @@ The project template comes with it's own implementation of tools used within the
 
 ### Development Environment
 
-See the [ACE3 documentation](http://ace3mod.com/wiki/development/setting-up-the-development-environment.html) on setting up your development environment.
+See the [ACE3 documentation](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html) on setting up your development environment.
 
 
 ### Usage
